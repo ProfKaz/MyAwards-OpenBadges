@@ -3,7 +3,7 @@
   "type": "BadgeClass",
   "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/ms102.json",
   "name": "Personal record: Microsoft 365 Certified: Administrator Expert",
-  "description": "Self-issued interoperability record referencing an independently verifiable Microsoft certification. Not issued by Microsoft as an Open Badge.",
+  "description": "Self-issued reference to independently verifiable achievement; not a Microsoft-issued Open Badge.",
   "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/ms102.png",
   "criteria": {
     "narrative": "Original credential verification: https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/3676BA541D04BB6A?sharingId=MVP_473744"

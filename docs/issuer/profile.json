@@ -1,0 +1,8 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "Profile",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/issuer/profile.json",
+  "name": "ProfKaz — personal credential records",
+  "url": "https://github.com/ProfKaz",
+  "email": "sebastian.zamorano@kaznets.com"
+}

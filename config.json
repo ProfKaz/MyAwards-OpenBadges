@@ -1,0 +1,22 @@
+{
+  "base_url": "https://profkaz.github.io/MyAwards-OpenBadges",
+  "issuer": {
+    "name": "ProfKaz — personal credential records",
+    "url": "https://github.com/ProfKaz",
+    "email": "REPLACE_WITH_PUBLIC_CONTACT_EMAIL"
+  },
+  "recipient": {
+    "type": "url",
+    "identity": "https://learn.microsoft.com/en-us/users/profkaz",
+    "hashed": false
+  },
+  "records": [
+    {
+      "slug": "ms102",
+      "title": "Microsoft 365 Certified: Administrator Expert",
+      "original_image": "assets/ms102.png",
+      "verification_url": "https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/3676BA541D04BB6A?sharingId=MVP_473744",
+      "self_attestation_date": "2026-10-15T00:00:00Z"
+    }
+  ]
+}

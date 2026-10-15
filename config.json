@@ -6,8 +6,8 @@
     "email": "sebastian.zamorano@kaznets.com"
   },
   "recipient": {
-    "type": "url",
-    "identity": "https://learn.microsoft.com/en-us/users/profkaz",
+    "type": "email",
+    "identity": "sebastian.zamorano@kaznets.com",
     "hashed": false
   },
   "records": [

@@ -3,7 +3,7 @@
   "issuer": {
     "name": "ProfKaz — personal credential records",
     "url": "https://github.com/ProfKaz",
-    "email": "REPLACE_WITH_PUBLIC_CONTACT_EMAIL"
+    "email": "sebastian.zamorano@kaznets.com"
   },
   "recipient": {
     "type": "url",

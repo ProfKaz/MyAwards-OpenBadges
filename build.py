@@ -48,6 +48,12 @@ for r in cfg['records']:
  verify=r['verification_url'];title=r['title']
  badge={'@context':'https://w3id.org/openbadges/v2','type':'BadgeClass','id':badge_id,'name':'Personal record: '+title,'description':'Self-issued reference to independently verifiable achievement; not a Microsoft-issued Open Badge.','image':base+'/'+image_rel,'criteria':{'narrative':'Original credential verification: '+verify},'issuer':issuer_id}
  assertion={'@context':'https://w3id.org/openbadges/v2','type':'Assertion','id':assertion_id,'recipient':cfg['recipient'],'badge':badge_id,'verification':{'type':'hosted'},'issuedOn':r['self_attestation_date'],'evidence':[{'id':verify,'name':'Original credential verification'}]}
+ if r.get('expires'):
+  from datetime import datetime
+  issued=datetime.fromisoformat(r['self_attestation_date'].replace('Z','+00:00'))
+  expiry=datetime.fromisoformat(r['expires'].replace('Z','+00:00'))
+  if expiry<=issued:raise ValueError('Expiration must follow assertion issuance: '+slug)
+  assertion['expires']=r['expires']
  put('badges/'+slug+'.json',badge);put('assertions/'+slug+'.json',assertion)
  (docs/('assets/'+slug+'-openbadges2.png')).write_bytes(bake(src.read_bytes(),assertion))
  links.append('<li>'+html.escape(title)+' — <a href="assets/'+slug+'-openbadges2.png">Open Badges 2.0 image</a> — <a href="'+html.escape(verify,quote=True)+'">verify original certification</a></li>')

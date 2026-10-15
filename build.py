@@ -37,9 +37,12 @@ for r in cfg['records']:
  slug=r['slug']
  if not re.fullmatch(r'[a-z0-9][a-z0-9-]*',slug):raise ValueError('Invalid slug '+slug)
  src=root/r['original_image']
- if not src.exists():raise FileNotFoundError(src)
+ if not src.exists():
+  src=docs/'assets'/(slug+'.png')
+ if not src.exists():raise FileNotFoundError('Original PNG not found: '+str(src))
  image_rel='assets/'+slug+'.png';dest=docs/image_rel
- dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dest)
+ dest.parent.mkdir(parents=True,exist_ok=True)
+ if src.resolve()!=dest.resolve(): shutil.copyfile(src,dest)
  badge_id=base+'/badges/'+slug+'.json'
  assertion_id=base+'/assertions/'+slug+'.json'
  verify=r['verification_url'];title=r['title']

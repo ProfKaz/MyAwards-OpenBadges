@@ -3,8 +3,8 @@
   "type": "Assertion",
   "id": "https://profkaz.github.io/MyAwards-OpenBadges/assertions/ms102.json",
   "recipient": {
-    "type": "url",
-    "identity": "https://learn.microsoft.com/en-us/users/profkaz",
+    "type": "email",
+    "identity": "sebastian.zamorano@kaznets.com",
     "hashed": false
   },
   "badge": "https://profkaz.github.io/MyAwards-OpenBadges/badges/ms102.json",

@@ -19,7 +19,7 @@ for k in ('name','url','email'):check(bool(issuer.get(k)),f'issuer.{k} is requir
 check(url(issuer.get('url','')),'issuer.url must be HTTPS')
 recipient=cfg.get('recipient',{})
 check(recipient.get('type')=='email','recipient.type must be email for this configuration')
-check(bool(re.fullmatch(r'[^@\\s]+@[^@\\s]+\\.[^@\\s]+',recipient.get('identity',''))),'recipient.identity must be a valid email')
+check(bool(re.fullmatch(r'[^@\s]+@[^@\s]+\.[^@\s]+',recipient.get('identity',''))),'recipient.identity must be a valid email')
 check(recipient.get('hashed') is False,'hashed recipient must be false unless hashing is implemented')
 slugs=set()
 for n,r in enumerate(cfg.get('records',[])):

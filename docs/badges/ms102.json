@@ -2,7 +2,7 @@
   "@context": "https://w3id.org/openbadges/v2",
   "type": "BadgeClass",
   "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/ms102.json",
-  "name": "Personal record: Microsoft 365 Certified: Administrator Expert",
+  "name": "Microsoft 365 Certified: Administrator Expert",
   "description": "Self-issued reference to independently verifiable achievement; not a Microsoft-issued Open Badge.",
   "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/ms102.png",
   "criteria": {

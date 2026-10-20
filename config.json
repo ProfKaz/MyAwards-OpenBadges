@@ -17,7 +17,14 @@
       "original_image": "assets/ms102.png",
       "verification_url": "https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/3676BA541D04BB6A?sharingId=MVP_473744",
       "self_attestation_date": "2026-10-15T00:00:00Z",
-      "expires": "2027-08-12T00:00:00Z"
+      "expires": "2027-08-12T00:00:00Z",
+      "skills": [
+        "Deploy and manage a Microsoft 365 tenant",
+        "Implement and manage Microsoft Entra identity and access",
+        "Manage security and threats by using Microsoft Defender XDR",
+        "Manage compliance by using Microsoft Purview"
+      ],
+      "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102"
     }
   ]
 }

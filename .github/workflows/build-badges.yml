@@ -6,7 +6,7 @@ on:
     paths:
       - config.json
       - build.py
-      - docs/assets/ms102.png
+      - 'docs/assets/*.png'
       - .github/workflows/build-badges.yml
 
 permissions:

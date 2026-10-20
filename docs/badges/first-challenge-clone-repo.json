@@ -3,7 +3,7 @@
   "type": "BadgeClass",
   "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/first-challenge-clone-repo.json",
   "name": "First Challenge: Clone ProfKaz MyAwards GitHub Repo",
-  "description": "Demonstration achievement record for testing Open Badges 2.0 compatibility. This is a self-issued test badge, not an independently audited completion award.",
+  "description": "Demonstration achievement record for testing Open Badges 2.0 compatibility. Self-issued test badge, not an independently audited completion award.",
   "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/first-challenge-clone-repo.png",
   "criteria": {
     "narrative": "Challenge: clone or fork the ProfKaz/MyAwards-OpenBadges repository and configure a personal copy. A repository homepage alone does not prove an individual completed the challenge."

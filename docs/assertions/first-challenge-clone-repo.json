@@ -1,0 +1,21 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "Assertion",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/assertions/first-challenge-clone-repo.json",
+  "recipient": {
+    "type": "email",
+    "identity": "sebastian.zamorano@kaznets.com",
+    "hashed": false
+  },
+  "badge": "https://profkaz.github.io/MyAwards-OpenBadges/badges/first-challenge-clone-repo.json",
+  "verification": {
+    "type": "hosted"
+  },
+  "issuedOn": "2026-10-20T00:00:00Z",
+  "evidence": [
+    {
+      "id": "https://github.com/ProfKaz/MyAwards-OpenBadges",
+      "name": "Reference repository for this demonstration"
+    }
+  ]
+}

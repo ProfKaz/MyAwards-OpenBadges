@@ -25,6 +25,21 @@
         "Manage compliance by using Microsoft Purview"
       ],
       "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102"
+    },
+    {
+      "slug": "first-challenge-clone-repo",
+      "title": "First Challenge: Clone ProfKaz MyAwards GitHub Repo",
+      "original_image": "docs/assets/first-challenge-clone-repo.png",
+      "verification_url": "https://github.com/ProfKaz/MyAwards-OpenBadges",
+      "self_attestation_date": "2026-10-20T00:00:00Z",
+      "description": "Demonstration achievement record for testing Open Badges 2.0 compatibility. Self-issued test badge, not an independently audited completion award.",
+      "criteria_narrative": "Challenge: clone or fork the ProfKaz/MyAwards-OpenBadges repository and configure a personal copy. A repository homepage alone does not prove an individual completed the challenge.",
+      "evidence_name": "Reference repository for this demonstration",
+      "skills": [
+        "GitHub",
+        "Repository cloning",
+        "Open Badges 2.0"
+      ]
     }
   ]
 }

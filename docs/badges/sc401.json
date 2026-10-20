@@ -1,0 +1,23 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/sc401.json",
+  "name": "Microsoft Certified: Information Protection Administrator Associate",
+  "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+  "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/sc401.png",
+  "criteria": {
+    "narrative": "Verify the Microsoft certification using the official Microsoft Learn credential sharing link."
+  },
+  "issuer": "https://profkaz.github.io/MyAwards-OpenBadges/issuer/profile.json",
+  "tags": [
+    "Implement information protection",
+    "Implement data loss prevention and retention",
+    "Manage risks, alerts, and activities"
+  ],
+  "alignment": [
+    {
+      "targetName": "Microsoft Certified: Information Protection Administrator Associate measured skills",
+      "targetUrl": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401"
+    }
+  ]
+}

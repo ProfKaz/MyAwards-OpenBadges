@@ -1,0 +1,26 @@
+{
+  "base_url": "https://YOURUSER.github.io/YOURREPO",
+  "issuer": {
+    "name": "Your Name — personal badge records",
+    "url": "https://github.com/YOURUSER",
+    "email": "YOUR_PUBLIC_EMAIL@example.org"
+  },
+  "recipient": {
+    "type": "email",
+    "identity": "YOUR_VERIFIED_EMAIL@example.org",
+    "hashed": false
+  },
+  "records": [
+    {
+      "slug": "your-badge",
+      "title": "Your authentic achievement",
+      "original_image": "docs/assets/your-badge.png",
+      "verification_url": "https://example.org/credential-verification",
+      "self_attestation_date": "REPLACE_WITH_YOUR_REAL_ISO_DATE",
+      "description": "Self-issued record referencing a verifiable achievement",
+      "criteria_narrative": "Describe actual completion criteria and evidence.",
+      "evidence_name": "Official verification",
+      "skills": []
+    }
+  ]
+}

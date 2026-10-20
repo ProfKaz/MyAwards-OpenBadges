@@ -1,21 +1,27 @@
 # MyAwards-OpenBadges
 
-A collection of independently verifiable professional-credential references and experimental Open Badges 2.0 representations.
+A reusable GitHub Pages + Python project that packages **personal/self-issued Open Badges 2.0 references** to externally verifiable certifications and awards. Each credential has its own Assertion, BadgeClass, and baked PNG, sharing one issuer profile.
 
-## Important distinction
+**Start here: [Guide/README.md](Guide/README.md)** · **[Prompt-to-use-with-AI.md](Guide/Prompt-to-use-with-AI.md)**
 
-Microsoft Learn is the authoritative verification source for Microsoft certifications. Any Open Badges 2.0 assertions published by this repository are **self-issued personal records**, not Microsoft-issued Open Badges. Do not treat the repository itself as proof of a Microsoft-issued Open Badge.
+## Use your own copy
 
-## Initial credential
+Fork or clone the repository. Replace the original owner's `config.json` details and all credential records, and remove inherited generated records in `docs/` before publishing. Upload your original PNGs to `docs/assets/`, update `config.json`, then run `python build.py` or the workflow in **Actions → Build Open Badges 2.0 images**. Configure **Settings → Pages → Deploy from a branch → main → /docs**.
 
-- Microsoft 365 Certified: Administrator Expert (MS-102)
-- [Verify original Microsoft Learn credential](https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/3676BA541D04BB6A?sharingId=MVP_473744)
+The `Guide/` folder explains the inputs, testing, security/privacy cautions, and troubleshooting. It also contains a copyable AI prompt designed to walk a new owner through configuration.
 
-## Planned structure
+## Generated content
 
-- `assets/`: original credential images
-- `config.json`: credential inventory and original verification URLs
-- `build.py`: builds hosted OB2 JSON-LD and baked PNGs
-- `docs/`: GitHub Pages output, including `issuer/`, `badges/`, `assertions/`, and `assets/`
+- `docs/issuer/profile.json`: self-issued issuer profile
+- `docs/badges/<slug>.json`: BadgeClass and measured skills
+- `docs/assertions/<slug>.json`: hosted Assertion, recipient, issue and expiry dates
+- `docs/assets/<slug>-openbadges2.png`: baked PNG with `iTXt:openbadges`
+- `docs/index.html`: public badge links
 
-The publishing workflow is being prepared. GitHub Pages is not yet enabled. Acceptance by Sessionize is not guaranteed because the original Microsoft Learn credential is not an issuer-signed Open Badges 2.0 assertion.
+## Important provenance warning
+
+These are **self-issued declarations**, not Open Badges issued or cryptographically signed by Microsoft or any original certification provider. Verify the underlying achievement using its official credential verification URL. Third-party import and issuer support vary; successful imports are not proof of original-issuer OB2 issuance.
+
+The original repository includes an example record for MS-102 owned by ProfKaz. It must be removed or replaced in a fork before another user's publication.
+
+Built around [Open Badges 2.0](https://www.imsglobal.org/spec/ob/v2p0/) and the [baking specification](https://www.imsglobal.org/spec/ob/v2p0/baking/).

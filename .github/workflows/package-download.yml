@@ -1,0 +1,62 @@
+name: Publish reusable ZIP
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'Guide/**'
+      - 'config.example.json'
+      - 'build.py'
+      - 'validate_config.py'
+      - '.github/workflows/build-badges.yml'
+      - '.github/workflows/package-download.yml'
+      - 'Downloads/README.md'
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate current configuration
+        run: python validate_config.py
+      - name: Create downloadable source package
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, ZIP_DEFLATED
+          root=Path('.')
+          dest=Path('Downloads/MyAwards-OpenBadges-Starter.zip')
+          dest.parent.mkdir(exist_ok=True)
+          # Distribution is deliberately template-only: NEVER bundle
+          # ProfKaz's personal config, original certificates, or generated records.
+          paths=[
+              Path('README.md'),
+              Path('Guide/README.md'),
+              Path('Guide/Prompt-to-use-with-AI.md'),
+              Path('build.py'),
+              Path('validate_config.py'),
+              Path('config.example.json'),
+              Path('.github/workflows/build-badges.yml')
+          ]
+          with ZipFile(dest,'w',ZIP_DEFLATED) as z:
+              for path in paths:
+                  if not path.exists():raise FileNotFoundError(path)
+                  name='config.json' if path.name=='config.example.json' else str(path)
+                  z.write(path,name)
+              z.writestr('docs/.nojekyll','')
+              z.writestr('docs/assets/README.txt','Add your own badge PNGs here. Update config.json before running the generator.\n')
+          print(dest,dest.stat().st_size)
+          PY
+      - name: Commit ZIP
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Downloads/MyAwards-OpenBadges-Starter.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish reusable starter ZIP"
+            git push
+          fi

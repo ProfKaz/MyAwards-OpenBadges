@@ -51,7 +51,7 @@ for r in cfg['records']:
   if not isinstance(r['skills'],list) or not all(isinstance(x,str) and x.strip() for x in r['skills']):raise ValueError('skills must be nonempty strings: '+slug)
   badge['tags']=r['skills']
   if r.get('skills_source'):
-   badge['alignment']=[{'targetName':'MS-102 measured skills','targetUrl':r['skills_source'] }]
+   badge['alignment']=[{'targetName':title+' measured skills','targetUrl':r['skills_source'] }]
  assertion={'@context':'https://w3id.org/openbadges/v2','type':'Assertion','id':assertion_id,'recipient':cfg['recipient'],'badge':badge_id,'verification':{'type':'hosted'},'issuedOn':r['self_attestation_date'],'evidence':[{'id':verify,'name':'Original credential verification'}]}
  if r.get('expires'):
   from datetime import datetime

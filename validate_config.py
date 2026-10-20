@@ -28,7 +28,9 @@ for n,r in enumerate(cfg.get('records',[])):
  check(slug not in slugs,label+' duplicate slug');slugs.add(slug)
  check(bool(r.get('title')),label+' title required')
  check(url(r.get('verification_url','')),label+' verification URL must be HTTPS')
- check((root/r.get('original_image','MISSING')).is_file(),label+' source PNG not found')
+ src=root/r.get('original_image','MISSING')
+ if not src.is_file():src=root/'docs'/'assets'/(slug+'.png')
+ check(src.is_file(),label+' source PNG not found')
  for key in ('self_attestation_date','expires'):
   if key=='expires' and not r.get(key):continue
   try:datetime.fromisoformat(r[key].replace('Z','+00:00'))

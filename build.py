@@ -46,13 +46,13 @@ for r in cfg['records']:
  badge_id=base+'/badges/'+slug+'.json'
  assertion_id=base+'/assertions/'+slug+'.json'
  verify=r['verification_url'];title=r['title']
- badge={'@context':'https://w3id.org/openbadges/v2','type':'BadgeClass','id':badge_id,'name':title,'description':'Self-issued reference to independently verifiable achievement; not a Microsoft-issued Open Badge.','image':base+'/'+image_rel,'criteria':{'narrative':'Original credential verification: '+verify},'issuer':issuer_id}
+ badge={'@context':'https://w3id.org/openbadges/v2','type':'BadgeClass','id':badge_id,'name':title,'description':r.get('description','Self-issued reference to independently verifiable achievement; not an original-issuer Open Badge.'),'image':base+'/'+image_rel,'criteria':{'narrative':r.get('criteria_narrative','Original credential verification: '+verify)},'issuer':issuer_id}
  if r.get('skills'):
   if not isinstance(r['skills'],list) or not all(isinstance(x,str) and x.strip() for x in r['skills']):raise ValueError('skills must be nonempty strings: '+slug)
   badge['tags']=r['skills']
   if r.get('skills_source'):
    badge['alignment']=[{'targetName':title+' measured skills','targetUrl':r['skills_source'] }]
- assertion={'@context':'https://w3id.org/openbadges/v2','type':'Assertion','id':assertion_id,'recipient':cfg['recipient'],'badge':badge_id,'verification':{'type':'hosted'},'issuedOn':r['self_attestation_date'],'evidence':[{'id':verify,'name':'Original credential verification'}]}
+ assertion={'@context':'https://w3id.org/openbadges/v2','type':'Assertion','id':assertion_id,'recipient':cfg['recipient'],'badge':badge_id,'verification':{'type':'hosted'},'issuedOn':r['self_attestation_date'],'evidence':[{'id':verify,'name':r.get('evidence_name','Original credential verification')}]}
  if r.get('expires'):
   from datetime import datetime
   issued=datetime.fromisoformat(r['self_attestation_date'].replace('Z','+00:00'))

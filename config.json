@@ -40,6 +40,23 @@
         "Repository cloning",
         "Open Badges 2.0"
       ]
+    },
+    {
+      "slug": "sc401",
+      "title": "Microsoft Certified: Information Protection Administrator Associate",
+      "original_image": "docs/assets/sc401.png",
+      "verification_url": "https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/DCFAAB0ABAD04182?sharingId=MVP_473744",
+      "self_attestation_date": "2026-10-20T00:00:00Z",
+      "expires": "2027-09-05T00:00:00Z",
+      "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+      "criteria_narrative": "Verify the Microsoft certification using the official Microsoft Learn credential sharing link.",
+      "evidence_name": "Original Microsoft Learn credential verification",
+      "skills": [
+        "Implement information protection",
+        "Implement data loss prevention and retention",
+        "Manage risks, alerts, and activities"
+      ],
+      "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401"
     }
   ]
 }

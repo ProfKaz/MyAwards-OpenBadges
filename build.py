@@ -46,7 +46,7 @@ for r in cfg['records']:
  badge_id=base+'/badges/'+slug+'.json'
  assertion_id=base+'/assertions/'+slug+'.json'
  verify=r['verification_url'];title=r['title']
- badge={'@context':'https://w3id.org/openbadges/v2','type':'BadgeClass','id':badge_id,'name':'Personal record: '+title,'description':'Self-issued reference to independently verifiable achievement; not a Microsoft-issued Open Badge.','image':base+'/'+image_rel,'criteria':{'narrative':'Original credential verification: '+verify},'issuer':issuer_id}
+ badge={'@context':'https://w3id.org/openbadges/v2','type':'BadgeClass','id':badge_id,'name':title,'description':'Self-issued reference to independently verifiable achievement; not a Microsoft-issued Open Badge.','image':base+'/'+image_rel,'criteria':{'narrative':'Original credential verification: '+verify},'issuer':issuer_id}
  if r.get('skills'):
   if not isinstance(r['skills'],list) or not all(isinstance(x,str) and x.strip() for x in r['skills']):raise ValueError('skills must be nonempty strings: '+slug)
   badge['tags']=r['skills']

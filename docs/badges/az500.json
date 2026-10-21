@@ -1,0 +1,24 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/az500.json",
+  "name": "Microsoft Certified: Azure Security Engineer Associate",
+  "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+  "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/az500.png",
+  "criteria": {
+    "narrative": "Verify the Azure Security Engineer Associate certification using the official Microsoft Learn credential sharing link."
+  },
+  "issuer": "https://profkaz.github.io/MyAwards-OpenBadges/issuer/profile.json",
+  "tags": [
+    "Secure identity and access",
+    "Secure networking",
+    "Secure compute, storage, and databases",
+    "Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel"
+  ],
+  "alignment": [
+    {
+      "targetName": "Microsoft Certified: Azure Security Engineer Associate measured skills",
+      "targetUrl": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 A reusable GitHub Pages + Python project that packages **personal/self-issued Open Badges 2.0 references** to externally verifiable certifications and awards. Each credential has its own Assertion, BadgeClass, and baked PNG, sharing one issuer profile.
 
-**Start here: [Guide/README.md](Guide/README.md)** · **[Prompt-to-use-with-AI.md](Guide/Prompt-to-use-with-AI.md)**
+**Start here: [End-to-end AI workflow](Guide/AI-End-to-End-Workflow.md)** · **[Human setup guide](Guide/README.md)** · **[Copyable AI prompt](Guide/Prompt-to-use-with-AI.md)**
 
 ## Use your own copy
 

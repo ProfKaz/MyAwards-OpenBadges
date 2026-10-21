@@ -1,0 +1,23 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/ab900.json",
+  "name": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+  "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+  "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/ab900.png",
+  "criteria": {
+    "narrative": "Verify the Microsoft 365 Copilot and Agent Administration Fundamentals certification using the official Microsoft Learn credential sharing URL."
+  },
+  "issuer": "https://profkaz.github.io/MyAwards-OpenBadges/issuer/profile.json",
+  "tags": [
+    "Identify the core features and objects of Microsoft 365 services",
+    "Understand data protection and governance tasks for Microsoft 365 and Copilot",
+    "Perform basic administrative tasks for Copilot and agents"
+  ],
+  "alignment": [
+    {
+      "targetName": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals measured skills",
+      "targetUrl": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900"
+    }
+  ]
+}

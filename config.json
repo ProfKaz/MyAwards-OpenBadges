@@ -92,6 +92,23 @@
         "Plan and automate identity governance"
       ],
       "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300"
+    },
+    {
+      "slug": "sc200",
+      "title": "Microsoft Certified: Security Operations Analyst Associate",
+      "original_image": "docs/assets/sc200.png",
+      "verification_url": "https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/EC4810084AACEB6D?sharingId=MVP_473744",
+      "self_attestation_date": "2026-10-21T00:00:00Z",
+      "expires": "2027-02-06T00:00:00Z",
+      "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+      "criteria_narrative": "Verify this certification using its official Microsoft Learn credential share URL.",
+      "evidence_name": "Original Microsoft Learn credential verification",
+      "skills": [
+        "Manage a security operations environment",
+        "Respond to security incidents",
+        "Perform threat hunting"
+      ],
+      "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200"
     }
   ]
 }

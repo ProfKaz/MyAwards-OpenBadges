@@ -109,6 +109,22 @@
         "Perform threat hunting"
       ],
       "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200"
+    },
+    {
+      "slug": "ab900",
+      "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+      "original_image": "docs/assets/ab900.png",
+      "verification_url": "https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/8AC62CFB9F061E1B?sharingId=MVP_473744",
+      "self_attestation_date": "2026-10-21T00:00:00Z",
+      "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+      "criteria_narrative": "Verify the Microsoft 365 Copilot and Agent Administration Fundamentals certification using the official Microsoft Learn credential sharing URL.",
+      "evidence_name": "Original Microsoft Learn credential verification",
+      "skills": [
+        "Identify the core features and objects of Microsoft 365 services",
+        "Understand data protection and governance tasks for Microsoft 365 and Copilot",
+        "Perform basic administrative tasks for Copilot and agents"
+      ],
+      "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900"
     }
   ]
 }

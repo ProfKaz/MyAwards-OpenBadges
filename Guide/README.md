@@ -1,6 +1,6 @@
 # Reuse MyAwards-OpenBadges
 
-This folder is a **how-to guide for people cloning or forking the project**. See [Prompt-to-use-with-AI.md](Prompt-to-use-with-AI.md) to have an AI assistant guide the setup.
+This folder is a **how-to guide for people cloning or forking the project**. **Start with [AI-End-to-End-Workflow.md](AI-End-to-End-Workflow.md)** for the complete first-time user + AI process, including copyable minimum prompts, binary uploads, GitHub Actions, Pages and Credly. Then paste [Prompt-to-use-with-AI.md](Prompt-to-use-with-AI.md) into your assistant.
 
 ## What this project does
 

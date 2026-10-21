@@ -75,6 +75,23 @@
         "Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel"
       ],
       "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500"
+    },
+    {
+      "slug": "sc300",
+      "title": "Microsoft Certified: Identity and Access Administrator Associate",
+      "original_image": "docs/assets/sc300.png",
+      "verification_url": "https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/3548F8222B77BD89?sharingId=MVP_473744",
+      "self_attestation_date": "2026-10-21T00:00:00Z",
+      "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+      "criteria_narrative": "Verify this certification using its official Microsoft Learn credential share URL.",
+      "evidence_name": "Original Microsoft Learn credential verification",
+      "skills": [
+        "Implement and manage user identities",
+        "Implement authentication and access management",
+        "Plan and implement workload identities",
+        "Plan and automate identity governance"
+      ],
+      "skills_source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300"
     }
   ]
 }

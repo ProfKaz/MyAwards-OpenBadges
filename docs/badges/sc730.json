@@ -1,0 +1,24 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/sc730.json",
+  "name": "Microsoft Certified: Cybersecurity Business Professional",
+  "description": "Self-issued reference to an independently verifiable Microsoft beta credential; the SC-730 certification did not proceed to general release. Not a Microsoft-issued Open Badge.",
+  "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/sc730.png",
+  "criteria": {
+    "narrative": "Verify the SC-730 beta credential through the original Microsoft Learn sharing URL. Microsoft did not proceed with general release of this certification."
+  },
+  "issuer": "https://profkaz.github.io/MyAwards-OpenBadges/issuer/profile.json",
+  "tags": [
+    "Understand cybersecurity concepts",
+    "Understand cybersecurity risks and threats",
+    "Apply basic security policies to protect the organization",
+    "Report and respond to security incidents"
+  ],
+  "alignment": [
+    {
+      "targetName": "Microsoft Certified: Cybersecurity Business Professional measured skills",
+      "targetUrl": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-730"
+    }
+  ]
+}

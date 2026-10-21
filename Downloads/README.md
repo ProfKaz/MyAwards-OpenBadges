@@ -1,5 +1,7 @@
 # Downloads — MyAwards-OpenBadges
 
+**New to this project?** Follow the [end-to-end AI-assisted publication walkthrough](../Guide/AI-End-to-End-Workflow.md) for the exact inputs, prompts, AI responsibilities, manual image upload handoff and Credly import steps.
+
 This folder is intended for **portable ZIP distributions** of the project for users who do not want to fork it.
 
 ## Options

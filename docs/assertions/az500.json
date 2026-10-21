@@ -1,0 +1,22 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "Assertion",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/assertions/az500.json",
+  "recipient": {
+    "type": "email",
+    "identity": "sebastian.zamorano@kaznets.com",
+    "hashed": false
+  },
+  "badge": "https://profkaz.github.io/MyAwards-OpenBadges/badges/az500.json",
+  "verification": {
+    "type": "hosted"
+  },
+  "issuedOn": "2026-10-21T00:00:00Z",
+  "evidence": [
+    {
+      "id": "https://learn.microsoft.com/api/credentials/share/en-us/ProfKaz/886A5658E272C34A?sharingId=MVP_473744",
+      "name": "Original Microsoft Learn credential verification"
+    }
+  ],
+  "expires": "2027-03-25T00:00:00Z"
+}

@@ -1,0 +1,24 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/sc300.json",
+  "name": "Microsoft Certified: Identity and Access Administrator Associate",
+  "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+  "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/sc300.png",
+  "criteria": {
+    "narrative": "Verify this certification using its official Microsoft Learn credential share URL."
+  },
+  "issuer": "https://profkaz.github.io/MyAwards-OpenBadges/issuer/profile.json",
+  "tags": [
+    "Implement and manage user identities",
+    "Implement authentication and access management",
+    "Plan and implement workload identities",
+    "Plan and automate identity governance"
+  ],
+  "alignment": [
+    {
+      "targetName": "Microsoft Certified: Identity and Access Administrator Associate measured skills",
+      "targetUrl": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300"
+    }
+  ]
+}

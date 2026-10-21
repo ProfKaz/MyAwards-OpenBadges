@@ -1,0 +1,23 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
+  "id": "https://profkaz.github.io/MyAwards-OpenBadges/badges/sc200.json",
+  "name": "Microsoft Certified: Security Operations Analyst Associate",
+  "description": "Self-issued reference to an independently verifiable Microsoft certification; not a Microsoft-issued Open Badge.",
+  "image": "https://profkaz.github.io/MyAwards-OpenBadges/assets/sc200.png",
+  "criteria": {
+    "narrative": "Verify this certification using its official Microsoft Learn credential share URL."
+  },
+  "issuer": "https://profkaz.github.io/MyAwards-OpenBadges/issuer/profile.json",
+  "tags": [
+    "Manage a security operations environment",
+    "Respond to security incidents",
+    "Perform threat hunting"
+  ],
+  "alignment": [
+    {
+      "targetName": "Microsoft Certified: Security Operations Analyst Associate measured skills",
+      "targetUrl": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200"
+    }
+  ]
+}
